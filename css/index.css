@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+/*navigation*/
+.nav-container_wrapper {
+  width: 250px;
+  text-align: center;
+  color: #898f8e;
+  height: 100%;
+  background-color: #fff;
+}
+.nav-container_position {
+  position: fixed;
+  top: 78px;
+  width: 14.71%;
+}
+.nav-container_name,
+.nav-container {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-container {
+  margin-top: 70px;
+}
+
+.nav-ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav-li {
+  margin-top: 20px;
+  height: 37px;
+  line-height: 2.2em;
+}
+.nav-li:hover {
+  background-color: #898f8e;
+  color: #fff;
+  transition: 1.5s;
+}
+.nav-a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*container, portfolio*/
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+#portfolio {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-img {
+  width: 33.33%;
+  height: 368px;
+  float: left;
+}
+
+/*container, about me*/
+#about-me {
+  width: 100%;
+  height: 800px;
+  background-color: #adb8b6;
+  float: right;
+  color: white;
+}
+.about-me_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-me_h2 {
+  margin-left: 45%;
+}
+
+.about-me_img {
+  width: 25%;
+  height: 40%;
+  border-radius: 50%;
+  margin-left: 37%;
+}
+.about-me_text {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.about-me_h3 {
+  margin-top: 50px;
+}
+/*animation*/
+.about-me_p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*contact*/
+#contact {
+  width: 100%;
+  height: 100%;
+  background-color: #cfe3df;
+  float: right;
+}
+.contact-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-title {
+  width: 100%;
+  height: 100%;
+}
+.contact-title_h2 {
+  margin-top: 15%;
+  margin-left: 45%;
+}
+.contact-title_p,
+.contact-form {
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+}
+
+.contact-form {
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.lable-email,
+.lable-message,
+.form-button {
+  margin-top: 15px;
+}
+
+.input-name,
+.input-email,
+.input-message,
+.form-button {
+  height: 42px;
+  width: 100%;
+}
+
+.form-button {
+  width: 101%;
+  color: white;
+  background-color: #000;
+  border: none;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
